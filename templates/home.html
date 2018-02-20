@@ -1,33 +1,39 @@
+
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="static/style.css">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
-<div class="header1" align="center">ОПРОС</div>
-<div class="intro" align="justify">
-	Данный опрос состоит из трёх небольших частей. 
-	В первой части опрашиваемому нужно дать некоторую информацию о себе, 
-	во второй интерпретировать несколько похожих друг на друга предложений 
-	и в третьей оценить правильность написанных предложений. Надеюсь, 
-	непонятных моментов не возникнет. 
-	<div align="center">Все поля опроса обязательны к заполнению,</div>
-	<div align="center">кроме адреса электронной почты</div>
+<body alink="green">
+<div class="parent" align="center">
+    <div class="block">
+        <div class="title" align="center">LINGUISTIC RESEARCH</div>
+        <div class="langblock"align="center">
+            <div class="leftflag">
+                ВЫБЕРИТЕ УДОБНЫЙ ЯЗЫК<br><br>
+                <a href="/rus">
+                    <img class="flag" src="static/rus.png" alt="РУССКИЙ">
+                </a>
+            </div>
+            <div class="rightflag">
+                CHOOSE PREFERABLE LANGUAGE<br><br>
+                <a href="/eng">
+                    <img class="flag" src="static/eng.png" alt="ENGLISH">
+                </a>
+            </div>
+        </div>
+        <div class="contactblock" align="justify">
+            <div align="center">CONTACTS</div>
+            Matvey Sokolovskiy<br>
+            E-mail:&nbsp&nbsp<a href="mailto:matvey10@gmail.com?Subject=RESEARCH%20comment" target="_top">matvey10@gmail.com</a><br>
+            Project repository:&nbsp<a href="https://github.com/sukalov/fog_form">github.com/sukalov/fog_form</a><br>
+            <div align="center" class="subscript">
+                The Higher School Of Economics<br>
+                School of Linguistics<br>
+                Moscow<br>
+                Russia<br>
+                2018
+            </div>
+        </div>
+    </div>
 </div>
-<body class = 'page'>
-<form name="user_info"class = 'parent pagecenter'>
-	пол:<br>
-	<input type="radio" required="true" name="sex" value="мужской" /> мужской<br>
-	<input type="radio" required="true" name="sex" value="женский" /> женский<br><br>
-    возраст:&nbsp;<input type="text" name="age" required="true">&nbsp;лет<br></div><br>
-    город, в котором вы провели большую часть жизни: &nbsp;<input type="text" name="city" required="true"><br><br>
-    электронный адрес, если вы хотели бы получить результаты: &nbsp;<input type="text" name="email"><br><br>
-    <div class="submit"><input type="submit" class="button15" value="далее"/></div>	
-</form>
-<div class="note_block" align="center">
-	чтобы попасть на страницы stats, results и search достаточно пройти опрос<br>
-	или же на страницу с результатами можно просто перейти по кнопке 
-	<form action="/finish">
-    	<div><input type="submit" class="button15 submit3" value="finish"/></div>
-    </form>	
-</div>
-	
 </body>
