@@ -7,13 +7,13 @@ app = Flask(__name__)
 def home():
     return render_template('home.html')
 
-@app.route('/rus')
+@app.route('/ru')
 def rus():
-    return render_template('rus.html')
+    return render_template('ru_private.html')
 
-@app.route('/eng')
+@app.route('/en')
 def eng():
-    return render_template('eng.html')
+    return render_template('en_private.html')
 
 if __name__ == '__main__':
     app.run()
