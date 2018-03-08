@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../homeworks_mkold/flask_project/.idea/flask_project.iml" filepath="$PROJECT_DIR$/../homeworks_mkold/flask_project/.idea/flask_project.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fog_form.iml" filepath="$PROJECT_DIR$/.idea/fog_form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../semantic_database/.idea/semantic_database.iml" filepath="$PROJECT_DIR$/../semantic_database/.idea/semantic_database.iml" />
     </modules>
   </component>
 </project>
