@@ -1,6 +1,6 @@
 .back {
     background-color: darkgray;
-    background-image: url(fogs/fog1.jpg);
+    background-image: url(fogs/fog01.jpg);
     background-size: cover;
     font-family: "Garamond" serif;
     width: 100%;
@@ -55,7 +55,7 @@
 .contactblock{
     padding: 10px;
     margin-top: 150px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(238,238,238);
     width: 380px;
     border: 1px solid black;
 }
@@ -139,10 +139,30 @@ img.fog {
 
 .intro {
     font: 15pt serif;
-    width:  600px;
+    width: 600px;
     padding: 15px;
     position: relative;
     top: 10%;
+    border: 2px solid rgb(100, 100, 100);
+    background-color: rgb(238, 238, 238);
+}
+
+.ins {
+    font: 14pt serif;
+    width: 650px;
+    padding: 15px;
+    position: relative;
+    top: 10%;
+    border: 2px solid rgb(100, 100, 100);
+    background-color: rgb(238, 238, 238);
+}
+
+.introfin{
+    font: 15pt serif;
+    width:  350px;
+    padding: 15px;
+    position: relative;
+    top: 110px;
     border: 2px solid rgb(100,100,100);
     background-color: rgb(238,238,238);
 }
