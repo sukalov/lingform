@@ -1,6 +1,11 @@
 from flask import Flask
 from flask import url_for, render_template, request, redirect
 import random
+import os
+import psycopg2
+
+DATABASE_URL = os.environ['DATABASE_URL']
+conn = psycopg2.connect(DATABASE_URL, sslmode='require')
 
 def get_file_str(file):
     file = open(file, 'r', encoding='utf-8')
@@ -34,6 +39,49 @@ def randomize_stimulus_in_html(lang):
     results = open("results.tsv", 'a', encoding='utf-8')
     results.write(imgorder + '\t')
     results.close()
+
+sex = None
+age = None
+land1 = None #country_native
+land2 = None #country_actual
+language = None #lang_native
+languages = None #lang_others
+email = None
+langcomment= None
+imgorder = None
+T011= None
+T012= None
+T021= None
+T022= None
+T031= None
+T032= None
+T041= None
+T042= None
+T051= None
+T052= None
+T061= None
+T062= None
+T071= None
+T072= None
+T081= None
+T082= None
+T091= None
+T092= None
+T101= None
+T102= None
+T111= None
+T112= None
+T121= None
+T122= None
+T131= None
+T132= None
+T141= None
+T142= None
+T151= None
+T152= None
+T161= None
+T162= None
+finalcomment= None
 
 app = Flask(__name__)
 
@@ -219,6 +267,102 @@ def rus_comment():
 
         results.write(finalcomment + '\n')
         results.close()
+
+        DATABASE_URL = os.environ['DATABASE_URL']
+        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        cur = conn.cursor()
+        cur.execute('''
+        insert into results(
+        sex,
+        age,
+        country_native,
+        country_actual,
+        lang_native,
+        lang_other,
+        email,
+        lang_comment,
+        given_order,
+        fog01_name,
+        fog01_comment,
+        fog02_name,
+        fog02_comment,
+        fog03_name,
+        fog03_comment,
+        fog04_name,
+        fog04_comment,
+        fog05_name,
+        fog05_comment,
+        fog06_name,
+        fog06_comment,
+        fog07_name,
+        fog07_comment,
+        fog08_name,
+        fog08_comment,
+        fog09_name,
+        fog09_comment,
+        fog10_name,
+        fog10_comment,
+        fog11_name,
+        fog11_comment,
+        fog12_name,
+        fog12_comment,
+        fog13_name,
+        fog13_comment,
+        fog14_name,
+        fog14_comment,
+        fog15_name,
+        fog15_comment,
+        fog16_name,
+        fog16_comment,
+        final_comment
+        ) values (
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s
+        )
+        ''', (sex,age,land1,land2,language,languages,email,langcomment,imgorder,T011,T012,T021,T022,T031,T032,T041,T042,T051,T052,T061,T062,T071,T072,T081,T082,T091,T092,T101,T102,T111,T112,T121,T122,T131,T132,T141,T142,T151,T152,T161,T162,finalcomment))
+        conn.commit()
+        cur.close()
+        conn.close()
 
         return redirect(url_for('rus_finish'))
     return render_template('ru_comment.html')
@@ -406,12 +550,212 @@ def eng_comment():
 
         results.write(finalcomment + '\n')
         results.close()
+
+        DATABASE_URL = os.environ['DATABASE_URL']
+        conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+        cur = conn.cursor()
+        cur.execute('''
+        insert into results(
+        sex,
+        age,
+        country_native,
+        country_actual,
+        lang_native,
+        lang_other,
+        email,
+        lang_comment,
+        given_order,
+        fog01_name,
+        fog01_comment,
+        fog02_name,
+        fog02_comment,
+        fog03_name,
+        fog03_comment,
+        fog04_name,
+        fog04_comment,
+        fog05_name,
+        fog05_comment,
+        fog06_name,
+        fog06_comment,
+        fog07_name,
+        fog07_comment,
+        fog08_name,
+        fog08_comment,
+        fog09_name,
+        fog09_comment,
+        fog10_name,
+        fog10_comment,
+        fog11_name,
+        fog11_comment,
+        fog12_name,
+        fog12_comment,
+        fog13_name,
+        fog13_comment,
+        fog14_name,
+        fog14_comment,
+        fog15_name,
+        fog15_comment,
+        fog16_name,
+        fog16_comment,
+        final_comment
+        ) values (
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s,
+        %s
+        )
+        ''', (sex,age,land1,land2,language,languages,email,langcomment,imgorder,T011,T012,T021,T022,T031,T032,T041,T042,T051,T052,T061,T062,T071,T072,T081,T082,T091,T092,T101,T102,T111,T112,T121,T122,T131,T132,T141,T142,T151,T152,T161,T162,finalcomment))
+        conn.commit()
+        cur.close()
+        conn.close()
+
         return redirect(url_for('eng_finish'))
     return render_template('en_comment.html')
 
 @app.route('/enfinish')
 def eng_finish():
     return render_template('en_finish.html')
+
+
+
+# DATABASE_URL = os.environ['DATABASE_URL']
+# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
+# cur = conn.cursor()
+# cur.execute('''
+# insert into results(
+# sex,
+# age,
+# country_native,
+# country_actual,
+# lang_native,
+# lang_other,
+# email,
+# lang_comment,
+# given_order,
+# fog01_name,
+# fog01_comment,
+# fog02_name,
+# fog02_comment,
+# fog03_name,
+# fog03_comment,
+# fog04_name,
+# fog04_comment,
+# fog05_name,
+# fog05_comment,
+# fog06_name,
+# fog06_comment,
+# fog07_name,
+# fog07_comment,
+# fog08_name,
+# fog08_comment,
+# fog09_name,
+# fog09_comment,
+# fog10_name,
+# fog10_comment,
+# fog11_name,
+# fog11_comment,
+# fog12_name,
+# fog12_comment,
+# fog13_name,
+# fog13_comment,
+# fog14_name,
+# fog14_comment,
+# fog15_name,
+# fog15_comment,
+# fog16_name,
+# fog16_comment,
+# final_comment
+# ) values (
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {},
+# {}
+# )
+# ''', #(sex,age,land1,land2,language,languages,email,langcomment,imgorder,T011,T012,T021,T022,T0#31,T032,T041,T042,T051,T052,T061,T062,T071,T072,T081,T082,T091,T092,T101,T102,T111,T112,T#121,T122,T131,T132,T141,T142,T151,T152,T161,T162,finalcomment))
+# cur.commit()
+# cur.close()
+# conn.close()
+
+# @app.route('/enfinish')
+# @app.route('/rufinish')
+# def finish():
+
 
 if __name__ == '__main__':
     import os
