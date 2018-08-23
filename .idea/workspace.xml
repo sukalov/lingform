@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eaeee323-b4e2-4a8e-9733-a58822a9718b" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/results.tsv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/form.py" afterPath="$PROJECT_DIR$/form.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -54,13 +55,15 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="form.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="form.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/form.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+            <state relative-caret-position="1777">
+              <caret line="724" column="29" lean-forward="false" selection-start-line="724" selection-start-column="29" selection-end-line="724" selection-end-column="29" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
+                <marker date="1534782406058" expanded="true" signature="7752:9187" ph="insert into results... " />
+                <marker date="1534782406058" expanded="true" signature="15434:16869" ph="insert into results... " />
               </folding>
             </state>
           </provider>
@@ -89,7 +92,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="results.tsv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="results.tsv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/results.tsv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
@@ -141,7 +144,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>13</find>
       <find>14</find>
       <find>&lt;input name=&quot;</find>
       <find>&quot;T011&quot;</find>
@@ -171,6 +173,7 @@
       <find>In case you have any comments about the word usage, word alternatives or any other thoughts about the object from the picture, please, write them all below.</find>
       <find>Как вы назовёте изображённую на фотографии структуру на своём языке?</find>
       <find>Если у Вас есть какие-либо комментарии по поводу употребления слова, альтернативные слова или просто идеи относительно фотографии, пожалуйста, напишите всё здесь.</find>
+      <find>imgorder</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -201,11 +204,11 @@
         <option value="$PROJECT_DIR$/templates/en_finish.html" />
         <option value="$PROJECT_DIR$/templates/ru_finish.html" />
         <option value="$PROJECT_DIR$/templates/ru_template.html" />
-        <option value="$PROJECT_DIR$/form.py" />
         <option value="$PROJECT_DIR$/testing.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/runtime.txt" />
+        <option value="$PROJECT_DIR$/form.py" />
       </list>
     </option>
   </component>
@@ -215,7 +218,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
@@ -242,8 +245,13 @@
         <subPane>
           <expand>
             <path>
-              <item name="fogform" type="b2602c69:ProjectViewProjectNode" />
-              <item name="fogform" type="462c0819:PsiDirectoryNode" />
+              <item name="lingform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lingform" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="lingform" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lingform" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -531,20 +539,21 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3095526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3095526" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15379113" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15347221" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="SciView" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -598,6 +607,8 @@
           <caret line="38" column="26" lean-forward="false" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="26" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
+            <marker date="1534782406058" expanded="true" signature="7752:9187" ph="insert into results... " />
+            <marker date="1534782406058" expanded="true" signature="15434:16869" ph="insert into results... " />
           </folding>
         </state>
       </provider>
@@ -681,20 +692,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../semantic_database/adjectives/db_full_v2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108180">
-          <caret line="7212" column="32" lean-forward="false" selection-start-line="7212" selection-start-column="32" selection-end-line="7212" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../semantic_database/adjectives/heavy.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../semantic_database/adjectives/db_full_v2.txt" />
+    <entry file="file://$PROJECT_DIR$/../semantic_database/adjectives/heavy.txt" />
     <entry file="file://$PROJECT_DIR$/../semantic_database/adjectives/fulldic.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -876,24 +875,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/testing.py" />
-    <entry file="file://$PROJECT_DIR$/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -927,6 +908,26 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Procfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="19" lean-forward="false" selection-start-line="0" selection-start-column="19" selection-end-line="0" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/form.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1777">
+          <caret line="724" column="29" lean-forward="false" selection-start-line="724" selection-start-column="29" selection-end-line="724" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1534782406058" expanded="true" signature="7752:9187" ph="insert into results... " />
+            <marker date="1534782406058" expanded="true" signature="15434:16869" ph="insert into results... " />
+          </folding>
         </state>
       </provider>
     </entry>

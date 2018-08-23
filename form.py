@@ -19,6 +19,7 @@ def write_txt(what, where):
     doc.close()
 
 def randomize_stimulus_in_html(lang):
+    global imgorder
     html = get_file_str('templates/' + lang + '_template.html')
 
     numbers = ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12", "13", "14", "15", "16"]
@@ -93,6 +94,14 @@ def home():
 def rus():
     if request.args:
         results = open("results.tsv", 'a', encoding='utf-8')
+        global sex
+        global age
+        global land1
+        global land2
+        global language
+        global languages
+        global email
+        global langcomment
         sex = request.args['sex']
         age = request.args['age']
         land1 = request.args['land1']
@@ -121,6 +130,38 @@ def rus_instruction():
 @app.route('/ruform')
 def rus_form():
     if request.args:
+        global T011
+        global T012
+        global T021
+        global T022
+        global T031
+        global T032
+        global T041
+        global T042
+        global T051
+        global T052
+        global T061
+        global T062
+        global T071
+        global T072
+        global T081
+        global T082
+        global T091
+        global T092
+        global T101
+        global T102
+        global T111
+        global T112
+        global T121
+        global T122
+        global T131
+        global T132
+        global T141
+        global T142
+        global T151
+        global T152
+        global T161
+        global T162
         results = open("results.tsv", 'a', encoding='utf-8')
         try:
             T011 = request.args['T011']
@@ -259,6 +300,7 @@ def rus_form():
 @app.route('/rucomment')
 def rus_comment():
     if request.args:
+        global finalcomment
         results = open("results.tsv", 'a', encoding='utf-8')
         try:
             finalcomment = request.args['finalcomment']
@@ -404,6 +446,38 @@ def eng_instruction():
 @app.route('/enform')
 def eng_form():
     if request.args:
+        global T011
+        global T012
+        global T021
+        global T022
+        global T031
+        global T032
+        global T041
+        global T042
+        global T051
+        global T052
+        global T061
+        global T062
+        global T071
+        global T072
+        global T081
+        global T082
+        global T091
+        global T092
+        global T101
+        global T102
+        global T111
+        global T112
+        global T121
+        global T122
+        global T131
+        global T132
+        global T141
+        global T142
+        global T151
+        global T152
+        global T161
+        global T162
         results = open("results.tsv", 'a', encoding='utf-8')
         try:
             T011 = request.args['T011']
@@ -542,6 +616,7 @@ def eng_form():
 @app.route('/encomment')
 def eng_comment():
     if request.args:
+        global finalcomment
         results = open("results.tsv", 'a', encoding='utf-8')
         try:
             finalcomment = request.args['finalcomment']
@@ -653,109 +728,6 @@ def eng_comment():
 @app.route('/enfinish')
 def eng_finish():
     return render_template('en_finish.html')
-
-
-
-# DATABASE_URL = os.environ['DATABASE_URL']
-# conn = psycopg2.connect(DATABASE_URL, sslmode='require')
-# cur = conn.cursor()
-# cur.execute('''
-# insert into results(
-# sex,
-# age,
-# country_native,
-# country_actual,
-# lang_native,
-# lang_other,
-# email,
-# lang_comment,
-# given_order,
-# fog01_name,
-# fog01_comment,
-# fog02_name,
-# fog02_comment,
-# fog03_name,
-# fog03_comment,
-# fog04_name,
-# fog04_comment,
-# fog05_name,
-# fog05_comment,
-# fog06_name,
-# fog06_comment,
-# fog07_name,
-# fog07_comment,
-# fog08_name,
-# fog08_comment,
-# fog09_name,
-# fog09_comment,
-# fog10_name,
-# fog10_comment,
-# fog11_name,
-# fog11_comment,
-# fog12_name,
-# fog12_comment,
-# fog13_name,
-# fog13_comment,
-# fog14_name,
-# fog14_comment,
-# fog15_name,
-# fog15_comment,
-# fog16_name,
-# fog16_comment,
-# final_comment
-# ) values (
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {},
-# {}
-# )
-# ''', #(sex,age,land1,land2,language,languages,email,langcomment,imgorder,T011,T012,T021,T022,T0#31,T032,T041,T042,T051,T052,T061,T062,T071,T072,T081,T082,T091,T092,T101,T102,T111,T112,T#121,T122,T131,T132,T141,T142,T151,T152,T161,T162,finalcomment))
-# cur.commit()
-# cur.close()
-# conn.close()
-
-# @app.route('/enfinish')
-# @app.route('/rufinish')
-# def finish():
-
 
 if __name__ == '__main__':
     import os
