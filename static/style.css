@@ -1,4 +1,5 @@
 .back {
+    zoom: 100%;
     background-color: darkgray;
     background-image: url(fogs/fog01.jpg);
     background-size: cover;
@@ -13,6 +14,7 @@
 }
 
 .parent {
+    zoom: 100%;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     width: 100%;
     height: 100%;
@@ -23,6 +25,7 @@
 }
 
 .parent2 {
+    zoom: 100%;
     font-family: "Helvetica Neue", Helvetica, sans-serif;
     width: 100%;
     height: 100%;
