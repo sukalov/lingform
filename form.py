@@ -418,6 +418,14 @@ def rus_finish():
 @app.route('/en')
 def eng():
     if request.args:
+        global sex
+        global age
+        global land1
+        global land2
+        global language
+        global languages
+        global email
+        global langcomment
         results = open("results.tsv", 'a', encoding='utf-8')
         sex = request.args['sex']
         age = request.args['age']
